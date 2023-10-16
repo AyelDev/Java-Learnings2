@@ -1,27 +1,25 @@
-package com.Generics;
+package com.GenericsRestrictionsWithExtends;
 
 import java.util.ArrayList;
 
-public class MyCustomList<T> {
-
-	ArrayList<T> list = new ArrayList<>();
+public class MyCustomLists<T extends Number> {
+	ArrayList<T> lists = new ArrayList<>();
 
 	public void addElement(T element) {
 		// TODO Auto-generated method stub
-		list.add(element);
+		lists.add(element);
 	}
 
 	public void removeElement(T element) {
-		list.remove(element);
+		lists.remove(element);
 	}
 
 	public T get(int index) {
 		// TODO Auto-generated method stub
-		return list.get(index);
+		return lists.get(index);
 	}
 
 	public String toString() {
-		return list.toString();
+		return lists.toString();
 	}
-
 }
