@@ -17,7 +17,7 @@ public class FunctionalProgrammingRunner {
 	}
 	private static void printWithFp(List<String> list) {
 		list.stream().forEach(
-					element -> System.out.println("element -" + element)
+					element -> System.out.println("element : " + element)
 				);
 	}
 }
