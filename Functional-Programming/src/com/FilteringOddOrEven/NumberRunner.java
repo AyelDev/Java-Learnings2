@@ -8,7 +8,9 @@ public class NumberRunner {
 		// TODO Auto-generated method stub
 		List<Integer> list = List.of(1,2,3,4,5,6,7,8,9,10);
 		printWithFPWithFiltering(list);
-
+		
+		List<String> wordList = List.of("Apple", "Banana", "Cat", "Dog", "Orange", "Rattle", "Cripple");
+		printFPWithFilter(wordList);
 	}
 
 //	private static void printBasicWithFiltering(List<Integer> list) {
@@ -21,15 +23,15 @@ public class NumberRunner {
 	
 	
 	
+	private static void printFPWithFilter(List<String> wordList) {
+		wordList.stream()
+		.filter(elements -> elements.endsWith("ple")
+				)
+		.forEach(elements -> System.out
+				.println("element : " + elements)
+				);
+	}
 	
-//	private static void printWithFPWithFiltering(List<Integer> list) {
-//		list.stream()
-//		.filter(elements -> elements.endsWith("ple")
-//				)
-//		.forEach(elements -> System.out
-//				.println("element : " + elements)
-//				);
-//	}
 	
 	private static void printWithFPWithFiltering(List<Integer> list) {
 		list.stream()
@@ -37,5 +39,6 @@ public class NumberRunner {
 		.forEach(elements -> System.out
 				.println("element : " + elements)
 				);
+		
 	}
 }
