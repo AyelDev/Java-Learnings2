@@ -11,6 +11,8 @@ public class SyncronizedStart {
 		counter.increment();
 		System.out.println(counter.getI());
 		
+	
+		
 	}
 
 }
