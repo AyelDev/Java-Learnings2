@@ -97,4 +97,26 @@ public class Variables implements ITopics {
         // System.out.println(loopMessage);
     }
 
+    //Declare these variables below the Class or here (above where the function is being created)
+    public String geek;
+    public int i;
+    public Integer I;
+    public float f;
+    public double d;
+    
+    @Override
+    public void Instance_Variable(){
+    //Java Program to show the use of Instance Variable
+    this.geek = "Ariel";
+    }
+
+    //Static variables are also known as class variables
+    // Declared static variable
+    public static String geeks = "Ayeldev";
+    
+    @Override
+    public void Static_Variable(){
+    //Java Program to show the use of Static variables
+    System.out.println(this.geek);
+    }
 }

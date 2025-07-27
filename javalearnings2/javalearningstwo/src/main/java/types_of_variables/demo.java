@@ -13,8 +13,24 @@ public class demo {
 		// variable.firstDemo();
 		// variable.InitializingVariable();
 		// variable.VariableDeclaration();
-		// variable.Local_Variables2();
+		
+		//Local Variable
+		/*
+			variable.Local_Variables();
+			variable.Local_Variables2();
+	    */
 
+		//Instance Variable
+		/* 
+			var.Instance_Variable();
+        	System.out.println(var.geek);
+        	System.out.println(var.d); 
+		*/
+
+		// Static Variable
+		/*
+			new Variables().Static_Variable();
+		 */
 	}
 
 }
